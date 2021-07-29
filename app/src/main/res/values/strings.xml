@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tena</string>
+    <string name="action_sign_in">Sign in or Register</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Sign In</string>
+    <string name="prompt_email">Email </string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="sign_in">sign in</string>/>
+</resources>
