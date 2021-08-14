@@ -1,6 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#DEECF9"
+        android:layout_gravity="center"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="Fill The Necessary Documents"
+            android:textSize="7pt"
+            android:textStyle="bold"
+            android:typeface="sans"/>
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nameS"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="@string/enter_your_full_name"
+        android:paddingLeft="15dp"
+        android:textSize="15sp"
+        android:inputType="text"
+        android:background="@drawable/edittextviewblackborder"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+
+
+<com.google.android.material.textfield.TextInputEditText
+
+    android:id="@+id/email"
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+    android:paddingLeft="15dp"
+    android:background="@drawable/edittextviewblackborder"
+    android:layout_gravity="center"
+    android:ems="10"
+    android:textSize="15sp"
+    android:hint="Enter your e-mail"
+    android:inputType="textEmailAddress"
+    android:layout_marginTop="10dp"
+
+    />
+
+
+
+
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/phone_no"
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+    android:paddingLeft="15dp"
+    android:background="@drawable/edittextviewblackborder"
+    android:layout_gravity="center"
+    android:hint="Enter your mobile number"
+    android:ems="10"
+    android:inputType="text"
+    android:textSize="15sp"
+    android:layout_marginTop="10dp"/>
+
+
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/passwordS"
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+    android:paddingLeft="15dp"
+    android:background="@drawable/edittextviewblackborder"
+    android:layout_gravity="center"
+    android:ems="10"
+    android:textSize="15sp"
+    android:hint="Enter your password"
+    android:inputType="textPassword"
+    android:layout_marginTop="10dp"
+    app:passwordToggleEnabled="true"
+    />
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/edittextviewblackborder"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:textSize="15sp"
+        android:hint="Confirm your password"
+        android:entries="@array/sex"
+        android:prompt="Sex"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText"
+        style="@android:style/Widget.Spinner"
+        >
+
+    </Spinner>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/reason"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/edittextviewblackborder"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:textSize="15sp"
+        android:hint="Short Reason for funding request"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/discribed_reason"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/edittextviewblackborder"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:textSize="15sp"
+        android:hint="Description about reason for funding"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+        />
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/medical_file_upload"
+    android:textSize="17sp"
+
+   android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextviewblackborder"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120dp"
+    app:srcCompat="@drawable/ic_baseline_create_new_folder_24"
+    tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kebedel Id upload"
+        android:textSize="17sp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextviewblackborder"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120dp"
+            app:srcCompat="@drawable/ic_baseline_create_new_folder_24"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:fontFamily="sans-serif-medium"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</LinearLayout>
+</ScrollView>

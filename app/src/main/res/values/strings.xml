@@ -6,5 +6,11 @@
     <string name="prompt_email">Email </string>
     <string name="enter_your_full_name">Enter your full name</string>
     <string name="enter_your_password">Enter your Password</string>
-    <string name="sign_in">sign in</string>/>
+    <string name="sign_in">sign in</string>
+    <string name="sex">sex</string>
+    <string name="medical_file_upload">Medical File Upload</string>/>
+        <string-array name="sex">
+            <item>Male</item>
+            <item>Female</item>
+        </string-array>
 </resources>
