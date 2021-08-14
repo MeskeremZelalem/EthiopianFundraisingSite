@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/menu_group"
+        android:menuCategory="alternative"
+        android:orderInCategory="@integer/config_navAnimTime"
+        >
+    <item
+        android:id="@+id/logOut"
+        android:title="LogOut"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/request"
+        android:title ="Request for a fund"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/about_us"
+        android:title="About Us"
+        app:showAsAction="never"/>
+    </group>
+</menu>

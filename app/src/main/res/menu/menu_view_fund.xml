@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<!--    <item android:id="@+id/menu"-->
+<!--        android:title="Menu"-->
+<!--        android:icon="@drawable/ic_person"-->
+<!--        app:showAsAction="ifRoom"/>-->
+    <group
+        android:id="@+id/menu_group"
+        android:menuCategory="alternative"
+        android:orderInCategory="@integer/config_navAnimTime"
+        >
+        <item
+            android:id="@+id/logIn"
+            android:title="Login"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/signUp"
+            android:title="SignUp"
+            app:showAsAction="never"
+            />
+
+        <item
+            android:id="@+id/aboutUs"
+            android:title="About Us"
+            app:showAsAction="never"/>
+    </group>
+
+
+
+</menu>
