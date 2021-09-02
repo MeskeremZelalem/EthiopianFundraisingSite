@@ -11,51 +11,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="30dp">
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            app:srcCompat="@android:drawable/ic_search_category_default" />
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-31dp"
+            tools:layout_editor_absoluteY="30dp">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="270dp"
-            android:layout_marginRight="10dp"
-            app:srcCompat="@drawable/ic_baseline_menu_24"
-            tools:ignore="VectorDrawableCompat" />
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@android:drawable/ic_search_category_default" />
 
-    <TextView
-        android:layout_width="380dp"
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginRight="50dp"
+                app:srcCompat="@drawable/ic_baseline_menu_24"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
+        <TextView
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
         android:background="#aafFffff"
         android:text="Start Campaigning"
-        android:textSize="45sp"
+        android:textSize="35sp"
         android:typeface="serif"
         app:fontFamily="sans-serif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="390dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="328dp"
+            android:layout_marginTop="220dp"
             android:background="#aafFffff"
             android:gravity="center_horizontal"
             android:text="The first and largest fund raising platform
@@ -78,14 +80,15 @@
             android:layout_marginTop="60dp"
             android:background="@drawable/button"
             android:fontFamily="sans-serif-medium"
-            android:text="Sign up"
+            android:text="Start Campaign"
             android:textAllCaps="false"
             android:textColor="@color/cardview_light_background"
             android:typeface="sans"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:onClick="form_document"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

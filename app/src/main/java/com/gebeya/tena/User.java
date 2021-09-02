@@ -21,7 +21,7 @@ public class User implements Serializable {
     private String modifiedAt;
     private String role;
 
-    public User(String name, String email, String password, String phoneNo) {
+    public User(String name, String email, String password, String phoneNo,String role) {
         this.name = name;
         this.email = email;
         this.password = password;

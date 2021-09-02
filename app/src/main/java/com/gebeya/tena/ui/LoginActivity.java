@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.gebeya.tena.MainActivity;
+import com.gebeya.tena.MainActivity2;
 import com.gebeya.tena.R;
 import com.gebeya.tena.User;
 
@@ -73,27 +74,27 @@ public class LoginActivity extends AppCompatActivity {
 
     public void login(View view) {
         if (!emptyValidation()) {
-            Log.d("TAG","tag");
-            // progressDialog.show();
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    User user = userDao.getUser(email.getText().toString(), password.getText().toString());
-                    if (user != null){
+//            Log.d("TAG","tag");
+//            // progressDialog.show();
+//            new Handler().postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    User user = userDao.getUser(email.getText().toString(), password.getText().toString());
+//                    if (user != null){
 
-                        Intent I = new Intent(LoginActivity.this, MainActivity.class);
-                        I.putExtra("user",user);
-                        startActivity(I);
-                        finish();
-                    }else {
-                        Log.d("TAG","tag");
-                        Toast.makeText(LoginActivity.this,"Unregister user or Incorrect ",Toast.LENGTH_SHORT).show();
-                    }
-                    // progressDialog.dismiss();
-                }
-            },1000);
-        }else{
-            Toast.makeText(LoginActivity.this,"Empty Field ",Toast.LENGTH_SHORT).show();
-        }
-    }
-}
+            Intent I = new Intent(LoginActivity.this, MainActivity2.class);
+         //   I.putExtra("user", user);
+            startActivity(I);
+            finish();
+//                    }else {
+//                        Log.d("TAG","tag");
+//                        Toast.makeText(LoginActivity.this,"Unregister user or Incorrect ",Toast.LENGTH_SHORT).show();
+//                    }
+//                    // progressDialog.dismiss();
+//                }
+//            },1000);
+//        }else{
+//            Toast.makeText(LoginActivity.this,"Empty Field ",Toast.LENGTH_SHORT).show();
+//        }
+        }}}
+

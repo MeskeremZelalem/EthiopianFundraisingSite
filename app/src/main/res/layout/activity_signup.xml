@@ -5,13 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.SignUpActivity">
+    tools:context=".SignUpActivity">
 
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-
 
     <TextView
         android:layout_width="wrap_content"

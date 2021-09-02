@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -40,10 +41,10 @@
 
     </LinearLayout>
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/nameS"
+        android:id="@+id/firstname"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:hint="@string/enter_your_full_name"
+        android:hint="Enter First name"
         android:paddingLeft="15dp"
         android:textSize="15sp"
         android:inputType="text"
@@ -58,7 +59,7 @@
 
 <com.google.android.material.textfield.TextInputEditText
 
-    android:id="@+id/email"
+    android:id="@+id/lastname"
     android:layout_width="300dp"
     android:layout_height="40dp"
     android:paddingLeft="15dp"
@@ -66,44 +67,27 @@
     android:layout_gravity="center"
     android:ems="10"
     android:textSize="15sp"
-    android:hint="Enter your e-mail"
+    android:hint="Enter your Last name"
     android:inputType="textEmailAddress"
     android:layout_marginTop="10dp"
 
     />
 
-
-
-
 <com.google.android.material.textfield.TextInputEditText
-    android:id="@+id/phone_no"
+    android:id="@+id/Age"
     android:layout_width="300dp"
     android:layout_height="40dp"
     android:paddingLeft="15dp"
     android:background="@drawable/edittextviewblackborder"
     android:layout_gravity="center"
-    android:hint="Enter your mobile number"
+    android:hint="Enter your Age"
     android:ems="10"
     android:inputType="text"
     android:textSize="15sp"
     android:layout_marginTop="10dp"/>
 
-
-<com.google.android.material.textfield.TextInputEditText
-    android:id="@+id/passwordS"
-    android:layout_width="300dp"
-    android:layout_height="40dp"
-    android:paddingLeft="15dp"
-    android:background="@drawable/edittextviewblackborder"
-    android:layout_gravity="center"
-    android:ems="10"
-    android:textSize="15sp"
-    android:hint="Enter your password"
-    android:inputType="textPassword"
-    android:layout_marginTop="10dp"
-    app:passwordToggleEnabled="true"
-    />
     <Spinner
+        android:id="@+id/sex"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:paddingLeft="15dp"
@@ -113,13 +97,27 @@
         android:textSize="15sp"
         android:hint="Confirm your password"
         android:entries="@array/sex"
-        android:prompt="Sex"
         android:layout_marginTop="10dp"
         tools:ignore="HardcodedText"
         style="@android:style/Widget.Spinner"
         >
-
     </Spinner>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/paymentmethod"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/edittextviewblackborder"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:textSize="15sp"
+        android:hint="Choose Payment Method"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+        />
+
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/reason"

@@ -8,17 +8,6 @@
     android:layout_marginBottom="10dp"
     android:paddingBottom="10dp"
     android:id="@+id/container">
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="bold"
-        android:textColor="@color/darkBlue"
-        android:background="@color/white"
-        android:padding="7dp"
-        android:text="Selamawit negus"
-        android:textSize="29sp"
-        android:textStyle="bold" />
 
     <LinearLayout
         android:orientation="horizontal" android:layout_width="match_parent"
